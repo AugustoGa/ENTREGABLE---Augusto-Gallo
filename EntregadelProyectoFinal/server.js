@@ -4,8 +4,8 @@ import routerProductos from "./routes/productos.router.js";
 
 const app = express();
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.json());									//para entender
+app.use(express.urlencoded({ extended: true }));			// JSON
 
 app.use("/productos", routerProductos);
 app.use("/carritos", routerCarrito);

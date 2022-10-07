@@ -19,7 +19,7 @@ router.get("/", (req, res) => {
 	const listaCarritos = carrito.listarAll();
 	res.send(listaCarritos);
 });
-
+//agrega un producto al carrito
 router.post("/:id/productos/:idPrd", (req, res) => {
 	const respuesta = carrito.guardarProductoEnCarrito(
 		req.params.idPrd,
